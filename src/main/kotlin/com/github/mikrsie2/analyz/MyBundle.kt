@@ -1,4 +1,4 @@
-package com.github.mikrsie2.analys
+package com.github.mikrsie2.analyz
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

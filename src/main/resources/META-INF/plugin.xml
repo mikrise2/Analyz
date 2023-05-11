@@ -1,18 +1,18 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.mikrsie2.analys</id>
-    <name>Analys Template</name>
+    <id>com.github.mikrsie2.analyz</id>
+    <name>Java File Analyzer</name>
     <vendor>mikrsie2</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.mikrsie2.analys.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <toolWindow factoryClass="com.github.mikrsie2.analyz.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.mikrsie2.analys.listeners.MyFrameStateListener" topic="com.intellij.ide.FrameStateListener"/>
+        <listener class="com.github.mikrsie2.analyz.listeners.MyFrameStateListener" topic="com.intellij.ide.FrameStateListener"/>
     </applicationListeners>
 </idea-plugin>
